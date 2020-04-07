@@ -6,101 +6,160 @@
     <div class="row">
 
         <div class="col-12 col-md-7 my-3">
-            <h1 class="display-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <NavLink href="/development">See project development blog</NavLink>
+            @if (Environment.GetEnvironmentVariable("CHINA") == null) {
+                <h1 class="display-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <NavLink href="/development">See project development blog</NavLink>
+            } else {
+                <h1 class="display-4">智慧媒体探路者</h1>
+                <p>咖啡能科技公司运用人工智能技术更快更灵活的服务于各传统行业的客户，减少复杂的流程手续，提升我司客户的购买体验。</p>
+            }
         </div>
         <div class="col-12 col-md-5 my-3">
-            <img class="img-fluid" src="images/project-highschool.jpg" />
+            <img class="img-fluid img-thumbnail shadow" src="images/project-highschool.jpg" />
         </div>
 
         <div class="col-12 col-md-5 my-3">
-            <img class="img-fluid" src="images/website-offering.jpg" />
+            <img class="img-fluid img-thumbnail shadow" src="images/website-offering.jpg" />
         </div>
         <div class="col-12 col-md-7 my-3">
-            <h1 class="display-4">Tortor consequat id porta nibh venenatis cras sed</h1>
-            <p>Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet.</p>
-            <NavLink href="/solutions">See web presence solutions</NavLink>
+            @if (Environment.GetEnvironmentVariable("CHINA") == null) {
+                <h1 class="display-4">Tortor consequat id porta nibh venenatis cras sed</h1>
+                <p>Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet.</p>
+                <NavLink href="/solutions">See web presence solutions</NavLink>
+            } else {
+                <h1 class="display-4">游戏文化</h1>
+                <p>咖啡能科技正在共享各行各业的独特体验，通过游戏媒体的方式帮助您体验中国企业的独特性。</p>
+            }
         </div>
 
     </div>
 </div>
+
+<hr />
 
 <div class="jumbotron jumbotron-fluid bg-white my-4">
     <div class="container">
-        <p class="h1 text-center">The most robust solution for every marketing possibility.</p>
+        <p class="h1 text-center">科技让娱乐更互动</p>
     </div>
 </div>
 
-<div class="jumbotron jumbotron-fluid bg-primary my-5">
+<div class="jumbotron jumbotron-fluid bg-primary mb-0">
     <div class="container">
         <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            @if (Environment.GetEnvironmentVariable("CHINA") == null) {
+                <div class="col-12 col-md-3">
+                    <div class="card" style="height: 15vh;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-12 col-md-3">
+                    <div class="card" style="height: 15vh;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-12 col-md-3">
+                    <div class="card" style="height: 15vh;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-12 col-md-3">
+                    <div class="card" style="height: 15vh;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            } else {
+                <div class="col-12 col-md-3">
+                    <div class="card" style="height: 15vh;">
+                        <div class="card-body">
+                            <h5 class="card-title">用户数据加密</h5>
+                            <p class="card-text">捅过SSL通道，打造谢绝偷窥的用户体验。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card" style="height: 15vh;">
+                        <div class="card-body">
+                            <h5 class="card-title">高速迭代</h5>
+                            <p class="card-text">迅速有效的更新内容，确保您的信息的最新性。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card" style="height: 15vh;">
+                        <div class="card-body">
+                            <h5 class="card-title">敏捷开发</h5>
+                            <p class="card-text">Agile Scrum开发，无领头羊，创意无限的开发团队。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card" style="height: 15vh;">
+                        <div class="card-body">
+                            <h5 class="card-title">独特文化</h5>
+                            <p class="card-text">能容原创，不惜成本。</p>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
+@if (Environment.GetEnvironmentVariable("CHINA") == null) {
+    <div class="container">
+        <div class="row">
 
-        <div class="col-12 col-md-7 my-3">
-            <h1 class="display-4">Cras pulvinar mattis nunc sed blandit. Integer enim neque volutpat ac tincidunt vitae semper quis.</h1>
-            <p>Venenatis cras sed felis eget velit aliquet sagittis id. Porttitor leo a diam sollicitudin tempor id eu nisl. Facilisis volutpat est velit egestas dui id.</p>
-            <NavLink href="/development">Read more</NavLink>
-        </div>
-        <div class="col-12 col-md-5 my-3">
-            <img class="img-fluid" src="images/website-report.jpg" />
-        </div>
+            <div class="col-12 col-md-7 my-3">
+                <h1 class="display-4">Cras pulvinar mattis nunc sed blandit. Integer enim neque volutpat ac tincidunt vitae semper quis.</h1>
+                <p>Venenatis cras sed felis eget velit aliquet sagittis id. Porttitor leo a diam sollicitudin tempor id eu nisl. Facilisis volutpat est velit egestas dui id.</p>
+                <NavLink href="/development">Read more</NavLink>
+            </div>
+            <div class="col-12 col-md-5 my-3">
+                <img class="img-fluid img-thumbnail shadow" src="images/website-report.jpg" />
+            </div>
 
+        </div>
     </div>
-</div>
+}
 
-<div class="container-fluid my-5 px-5 mb-5" style="background: url(images/banner-bg.jpg); height: 67vh;">
+<div class="container-fluid px-5 shadow-lg" style="background: url(images/banner-bg.jpg); height: 67vh; background-size: cover; background-position: center;">
     <div class="row align-items-end h-100">
-        <div class="col-12 col-md-6 p-5 bg-white">
-            <h1>Promotional Video</h1>
-            <p>At augue eget arcu dictum. Sit amet nulla facilisi morbi tempus. Consequat interdum varius sit amet mattis vulputate. Non blandit massa enim nec dui nunc mattis.</p>
-            <NavLink href="/devblogs">Read more</NavLink>
+        <div class="col-12 col-md-6 p-5 bg-white h-25">
+            @if (Environment.GetEnvironmentVariable("CHINA") == null) {
+                <h1>Promotional Video</h1>
+                <p>At augue eget arcu dictum. Sit amet nulla facilisi morbi tempus. Consequat interdum varius sit amet mattis vulputate. Non blandit massa enim nec dui nunc mattis.</p>
+                <NavLink href="/devblogs">Read more</NavLink>
+            } else {
+                <h1>推广性视频</h1>
+                <p>为您独家订制化制作宣传视频。</p>
+            }
         </div>
-        <div class="col-12 col-md-6 p-5 bg-white">
-            <h1>Interactive Promotion</h1>
-            <p>Ultrices gravida dictum fusce ut. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Auctor augue mauris augue neque.</p>
-            <NavLink href="/devblogs">Read more</NavLink>
+        <div class="col-12 col-md-6 p-5 bg-white h-25">
+            @if (Environment.GetEnvironmentVariable("CHINA") == null) {
+                <h1>Interactive Promotion</h1>
+                <p>Ultrices gravida dictum fusce ut. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Auctor augue mauris augue neque.</p>
+                <NavLink href="/devblogs">Read more</NavLink>
+            } else {
+                <h1>互动性推广</h1>
+                <p>提供互动性娱乐性宣传软件。</p>
+            }
         </div>
     </div>
-</div>
+</div> 
